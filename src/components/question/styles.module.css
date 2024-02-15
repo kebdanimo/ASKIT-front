@@ -1,0 +1,57 @@
+.card{
+    width:100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #fff;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    position: relative;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-left: #BB00DA 8px solid;
+}
+
+
+.card:hover{
+    border-left: #8d01a5 8px solid;
+}
+
+.tags{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-self: flex-end;
+}
+
+.image img{
+    max-height: 300px !important;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.title {
+    font-weight: 700 !important;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.description {
+    word-wrap: break-word;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+}
