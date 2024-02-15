@@ -3,12 +3,14 @@ import React from "react";
 import styles from "./styles.module.css";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import { NavLink } from "react-router-dom";
+
+import img from './a.png';
 const ProfileCard = () => {
   return (
     <Box className={styles.card}>
       <Box className={styles.info}>
         <Box className={styles.avatar}>
-          <img src="https://via.placeholder.com/150" alt="user avatar" />
+          <img src={img} alt="user avatar" />
         </Box>
         <Box className={styles.cordinations}>
           <Box className={styles.name}>
