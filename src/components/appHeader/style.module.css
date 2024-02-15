@@ -1,0 +1,55 @@
+
+.navMenu{
+    width: fit-content;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-right: 32px;
+
+}
+
+
+.navLink{
+    text-decoration: none !important;
+    font-family: roboto !important;
+    display: block;
+    color: #000;
+}
+
+.navLinkActive{
+    color: #BB00DA;
+    font-weight: bold;
+    text-decoration: none !important;
+    font-family: roboto !important;
+    display: block;
+    position: relative;
+}
+
+.navLink:hover{
+    color: #BB00DA !important;
+    
+}
+
+.navLinkActive::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background-color: #BB00DA;
+    visibility: visible;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+}
+
+.appBar{
+  
+    background-color: #f7f7f7 !important;
+}
